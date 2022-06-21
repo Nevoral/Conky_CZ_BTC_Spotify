@@ -14,8 +14,10 @@ import (
 
 func main() {
 	api_key := "f90d99975cf2748d40dd7a5ad7df132d"
+	//Brno
 	lat := "49.1952"
 	lon := "16.608"
+	
 	url := "https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&appid=" + api_key + "&units=metric&lang=cz"
 	path := "./"
 	body, stat, err := GetDataFromWeb(url)
