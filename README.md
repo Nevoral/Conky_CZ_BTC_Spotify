@@ -5,7 +5,7 @@ Personal conky inspired by:</br>
   https://github.com/rayzr522/now-clocking </br>
   https://github.com/matteocasonato/conky-cryptoWidget</br>
   
-## Final look:
+## Final look
   ![Snímek obrazovky z 2022-06-21 11-57-27](https://user-images.githubusercontent.com/63755464/174772940-b865f77f-8dd7-4bb8-a304-cf8017aff76e.png)
 
 ## Dependencies
