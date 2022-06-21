@@ -11,4 +11,4 @@ lat=49.1952
 lon=16.608
 
 url="api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${api_key}&units=metric&lang=cz"
-curl ${url} -s -o ~/.config/conky/Graffias/weather.json
+curl ${url} -s -o ./weather.json

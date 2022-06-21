@@ -84,7 +84,7 @@ settigs_table = {
 
     {
         name = 'sunrise',
-        arg = 'execi 100 cat ~/.config/conky/Graffias/weather.json | jq  \'.sys.sunrise\'',
+        arg = 'execi 100 cat ./weather.json | jq  \'.sys.sunrise\'',
     }
 }
 
