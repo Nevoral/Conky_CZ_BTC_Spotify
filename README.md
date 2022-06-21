@@ -14,6 +14,18 @@ This script require the follwing modules/libraries:
 ```
 sudo apt install conky-all
 ```
+### Packages
+* Conky module; which can be installed using:
+- [conky](https://github.com/brndnmtthws/conky/)
+```
+sudo apt install conky-all
+```
+- [ffmpeg](https://www.ffmpeg.org/)
+- [playerctl](https://github.com/altdesktop/playerctl)
+```
+sudo apt install playerctl
+```
+
 ```
 # Ubuntu
 $ sudo apt install conky ffmpeg playerctl
