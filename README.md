@@ -1,6 +1,6 @@
 # Conky_CZ_BTC_Spotify
 
-Personal conky inspired by:
+Personal conky inspired by:</br>
   https://github.com/Calosis/Graffias-Custom</br>
   https://github.com/rayzr522/now-clocking </br>
   https://github.com/matteocasonato/conky-cryptoWidget</br>
