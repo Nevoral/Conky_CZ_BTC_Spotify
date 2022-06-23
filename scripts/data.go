@@ -17,7 +17,7 @@ func main() {
 	lat := "49.1952"
 	lon := "16.608"
 	url := "https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&appid=" + api_key + "&units=metric&lang=cz"
-	path := "./"
+	path := "./data"
 	body, stat, err := GetDataFromWeb(url)
 	if err != nil {
 		log.Println(err)
@@ -150,7 +150,7 @@ func GetTimeFormat(hour, min, sec int64) string {
 }
 func GetPrices() {
 	url := "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin%2Cethereum%2Cavalanche-2%2Ccardano%2Csolana%2Cpolkadot&vs_currencies=eur%2Cbtc"
-	path := "./"
+	path := "./data"
 	body, stat, err := GetDataFromWeb(url)
 	if err != nil {
 		log.Println(err)

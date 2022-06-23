@@ -23,7 +23,7 @@ if [ "$id_new" != "$id_current" ]; then
 	if [ "$cover" != "" ]; then
 		cp ./covers/$cover ./current/current.jpg
 	else
-		cp ./empty.jpg ./current/current.jpg
+		cp ./img/empty.jpg ./current/current.jpg
 	fi
 
 	echo $id_new > ./current/current.txt
