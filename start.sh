@@ -3,4 +3,4 @@
 killall conky
 sleep 2s
 		
-conky -c ./Graffias.conf &> /dev/null &
+conky -c ~/.config/conky/Graffias/Graffias.conf &> /dev/null &

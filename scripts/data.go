@@ -17,9 +17,9 @@ func main() {
 	//Brno
 	lat := "49.1952"
 	lon := "16.608"
-	
+
 	url := "https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&appid=" + api_key + "&units=metric&lang=cz"
-	path := "./data"
+	path := "./.config/conky/Graffias/data"
 	body, stat, err := GetDataFromWeb(url)
 	if err != nil {
 		log.Println(err)
@@ -83,7 +83,7 @@ func main() {
 		file, _ := json.MarshalIndent(data, "", " ")
 		WriteJSON("weather", path, &file)
 	}
-	GetPrices()
+	GetPrices(path)
 }
 func GetDataFromWeb(url string) (body []byte, status int, err error) {
 	req, err := http.NewRequest("GET", url, nil)
@@ -150,9 +150,8 @@ func GetTimeFormat(hour, min, sec int64) string {
 	se = strconv.FormatInt(sec, 10)
 	return hou + ":" + minu + ":" + se
 }
-func GetPrices() {
+func GetPrices(path string) {
 	url := "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin%2Cethereum%2Cavalanche-2%2Ccardano%2Csolana%2Cpolkadot&vs_currencies=eur%2Cbtc"
-	path := "./data"
 	body, stat, err := GetDataFromWeb(url)
 	if err != nil {
 		log.Println(err)
